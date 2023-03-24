@@ -14,7 +14,6 @@ target_encoder = load_object(file_path=model_resolver.get_latest_target_encoder_
 print(transformer.feature_names_in_)
 input_feature_name = list(transformer.feature_names_in_)
 
-
 app = Flask(__name__)
 static_folder='/logs'
 # log_helper = LogHelper()
