@@ -1,0 +1,15 @@
+[ 2023-03-24 02:00:52,524 ] 130 app - INFO - You are here
+[ 2023-03-24 02:00:52,524 ] 225 werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[ 2023-03-24 02:00:52,524 ] 225 werkzeug - INFO -  * Running on http://192.168.1.3:8080/ (Press CTRL+C to quit)
+[ 2023-03-24 02:00:57,645 ] 225 werkzeug - INFO - 192.168.1.3 - - [24/Mar/2023 02:00:57] "GET / HTTP/1.1" 200 -
+[ 2023-03-24 02:01:07,789 ] 148 app - INFO - You are in predict page
+[ 2023-03-24 02:01:07,790 ] 202 app - INFO - Taken inputs
+[ 2023-03-24 02:01:07,793 ] 206 app - INFO - Converted input data to DataFrame
+[ 2023-03-24 02:01:07,801 ] 210 app - INFO - Transformer applied
+[ 2023-03-24 02:01:07,802 ] 214 app - INFO - Prediction applied
+[ 2023-03-24 02:01:07,802 ] 216 app - INFO - Inverse Transform applied
+[ 2023-03-24 02:01:07,802 ] 218 app - INFO - Assigning categories
+[ 2023-03-24 02:01:07,802 ] 265 app - INFO - categories assigned
+[ 2023-03-24 02:01:07,804 ] 225 werkzeug - INFO - 192.168.1.3 - - [24/Mar/2023 02:01:07] "POST /predict HTTP/1.1" 200 -
+[ 2023-03-24 02:01:13,696 ] 225 werkzeug - INFO - 192.168.1.3 - - [24/Mar/2023 02:01:13] "[33mGET /predict/logs HTTP/1.1[0m" 404 -

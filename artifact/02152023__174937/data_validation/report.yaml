@@ -1,0 +1,12 @@
+missing_columns_within_train_dataset:
+- TSH measured
+- T3_measured
+- TT4_measured
+- T4U_measured
+- FTI_measured
+- TBG_measured
+missing_values_within_base_dataset:
+- T3
+- TBG
+missing_values_within_train_dataset:
+- T3

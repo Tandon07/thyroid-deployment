@@ -1,0 +1,9 @@
+[ 2023-03-24 01:21:05,847 ] 130 app - INFO - You are here
+[ 2023-03-24 01:21:05,863 ] 225 werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[ 2023-03-24 01:21:05,863 ] 225 werkzeug - INFO -  * Running on http://192.168.1.3:8081/ (Press CTRL+C to quit)
+[ 2023-03-24 01:21:27,022 ] 148 app - INFO - You are in predict page
+[ 2023-03-24 01:21:27,022 ] 173 app - INFO - Taken inputs
+[ 2023-03-24 01:21:27,037 ] 186 app - INFO - Assigning categories
+[ 2023-03-24 01:21:27,037 ] 233 app - INFO - categories assigned
+[ 2023-03-24 01:21:27,037 ] 225 werkzeug - INFO - 192.168.1.3 - - [24/Mar/2023 01:21:27] "POST /predict HTTP/1.1" 200 -

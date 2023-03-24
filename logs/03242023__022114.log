@@ -1,0 +1,54 @@
+[ 2023-03-24 02:21:15,002 ] 159 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2023-03-24 02:21:17,666 ] 16 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-24 02:21:17,666 ] 23 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-03-24 02:21:17,666 ] 21 root - INFO - Reading data from database: ThyroidF and collection: Thyroid Project
+[ 2023-03-24 02:21:19,350 ] 23 root - INFO - Found columns: Index(['_id', '29', 'F', 'f', 'f.1', 'f.2', 'f.3', 'f.4', 'f.5', 'f.6', 't',
+       'f.7', 'f.8', 'f.9', 'f.10', 'f.11', 'f.12', 't.1', '0.3', 'f.13', '?',
+       'f.14', '?.1', 'f.15', '?.2', 'f.16', '?.3', 'f.17', '?.4', 'other',
+       '-[840801013]'],
+      dtype='object')
+[ 2023-03-24 02:21:19,352 ] 25 root - INFO - Dropping column: _id 
+[ 2023-03-24 02:21:19,352 ] 27 root - INFO - Row and columns in df: (18342, 30)
+[ 2023-03-24 02:21:19,352 ] 30 root - INFO - collected the data with no column name
+[ 2023-03-24 02:21:19,352 ] 33 root - INFO - column 'other' is of no use so just dropping it
+[ 2023-03-24 02:21:19,366 ] 36 root - INFO - adding column names
+[ 2023-03-24 02:21:19,366 ] 40 root - INFO - getting splitted val of Target column
+[ 2023-03-24 02:21:19,428 ] 50 root - INFO - dropping featuree that are not useful 
+[ 2023-03-24 02:21:19,444 ] 57 root - INFO - Saving df to dataset folder
+[ 2023-03-24 02:21:19,538 ] 87 root - INFO - Data ingestion artifact: DataIngestionArtifact(dataset_file_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_ingestion\\dataset\\thyroiddataset.csv')
+[ 2023-03-24 02:21:19,538 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-24 02:21:19,538 ] 62 root - INFO - Reading base dataframe
+[ 2023-03-24 02:21:19,601 ] 65 root - INFO - Replace na value in base df
+[ 2023-03-24 02:21:19,601 ] 70 root - INFO - Reading dataframe
+[ 2023-03-24 02:21:19,633 ] 90 root - INFO - Splitting test and train and saving to datasplit folder
+[ 2023-03-24 02:21:19,637 ] 96 root - INFO - Write reprt in yaml file
+[ 2023-03-24 02:21:19,744 ] 106 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_validation\\report.yaml', train_file_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_validation\\datasetsplit\\train.csv', test_file_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_validation\\datasetsplit\\test.csv')
+[ 2023-03-24 02:21:19,744 ] 30 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-24 02:21:21,922 ] 48 root - INFO - Entered the save_object method of utils
+[ 2023-03-24 02:21:21,922 ] 52 root - INFO - Exited the save_object method of utils
+[ 2023-03-24 02:21:21,922 ] 48 root - INFO - Entered the save_object method of utils
+[ 2023-03-24 02:21:21,922 ] 52 root - INFO - Exited the save_object method of utils
+[ 2023-03-24 02:21:21,922 ] 133 root - INFO - sklearn version: 1.1.1
+[ 2023-03-24 02:21:21,922 ] 144 root - INFO - Data transformation object DataTransformationArtifact(transform_object_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_transformation\\transformer\\transformer.pkl', transformed_train_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_transformation\\transformed\\train.npz', transformed_test_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_transformation\\transformed\\test.npz', target_encoder_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\data_transformation\\target_encoder\\target_encoder.pkl')
+[ 2023-03-24 02:21:21,922 ] 19 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-24 02:21:21,922 ] 46 root - INFO - Loading train and test array.
+[ 2023-03-24 02:21:21,937 ] 50 root - INFO - Splitting input and target feature from both train and test arr.
+[ 2023-03-24 02:21:21,937 ] 54 root - INFO - Train the model
+[ 2023-03-24 02:21:21,967 ] 57 root - INFO - Calculating f1 train score
+[ 2023-03-24 02:21:21,967 ] 61 root - INFO - Calculating f1 test score
+[ 2023-03-24 02:21:21,967 ] 65 root - INFO - train score:0.9324510614833196 and tests score 0.8914002205071665
+[ 2023-03-24 02:21:21,967 ] 67 root - INFO - Checking if our model is underfitting or not
+[ 2023-03-24 02:21:21,967 ] 72 root - INFO - Checking if our model is overfiiting or not
+[ 2023-03-24 02:21:21,967 ] 79 root - INFO - Saving mode object
+[ 2023-03-24 02:21:21,967 ] 48 root - INFO - Entered the save_object method of utils
+[ 2023-03-24 02:21:21,982 ] 52 root - INFO - Exited the save_object method of utils
+[ 2023-03-24 02:21:21,982 ] 83 root - INFO - Prepare the artifact
+[ 2023-03-24 02:21:21,982 ] 86 root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path='C:\\Users\\tando\\Downloads\\thyroid-detection-main\\thyroid-detection-main\\artifact\\03242023__022117\\model_trainer\\model\\model.pkl', accuracy_train=0.9324510614833196, accuracy_test=0.8914002205071665)
+[ 2023-03-24 02:21:21,982 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-24 02:21:21,982 ] 36 root - INFO - if saved model folder has model the we will compare which model is best trained or the model from saved model folder
+[ 2023-03-24 02:21:21,982 ] 47 root - INFO - Finding location of transformer model and target encoder
+[ 2023-03-24 02:21:21,982 ] 52 root - INFO - Previous trained objects of transformer, model and target encoder
+[ 2023-03-24 02:21:21,982 ] 60 root - INFO - Currently trained model objects
+[ 2023-03-24 02:21:22,407 ] 78 root - INFO - Accuracy using previous trained model: 0.8936052921719956
+[ 2023-03-24 02:21:22,786 ] 87 root - INFO - Accuracy using current trained model: 0.8914002205071665
+[ 2023-03-24 02:21:22,786 ] 89 root - INFO - Current trained model is not better than previous model

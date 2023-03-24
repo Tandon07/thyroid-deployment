@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thyroid Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            background-image: url("https://www.morristownhamblen.com/wp-content/uploads/sites/9/2018/04/thyroid.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+h1 {
+  text-align: center;
+  color: Red;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 10px;
+  color: #EEC653;
+}
+
+input[type="number"], select {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  font-color: #EEC653;
+}
+
+select {
+  height: 30px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1>Thyroid Detection</h1>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br><br>
+        <label for="on_thyroxine">on_thyroxine:</label>
+        <select id="on_thyroxine" name="on_thyroxine" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="query_on_thyroxine">query_on_thyroxine:</label>
+        <select id="query_on_thyroxine" name="query_on_thyroxine" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="on_antithyroid_medication">on_antithyroid_medication:</label>
+        <select id="on_antithyroid_medication" name="on_antithyroid_medication" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="sick">sick:</label>
+        <select id="sick" name="sick" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="pregnant">pregnant:</label>
+        <select id="pregnant" name="pregnant" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="thyroid_surgery">thyroid_surgery:</label>
+        <select id="thyroid_surgery" name="thyroid_surgery" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="I131_treatment">I131_treatment:</label>
+        <select id="I131_treatment" name="I131_treatment" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="query_hypothyroid">query_hypothyroid:</label>
+        <select id="query_hypothyroid" name="query_hypothyroid" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="query_hyperthyroid">query_hyperthyroid:</label>
+        <select id="query_hyperthyroid" name="query_hyperthyroid" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="lithium">lithium:</label>
+        <select id="lithium" name="lithium" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="goitre">goitre:</label>
+        <select id="goitre" name="goitre" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="tumor">tumor:</label>
+        <select id="tumor" name="tumor" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="hypopituitary">hypopituitary:</label>
+        <select id="hypopituitary" name="hypopituitary" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="psych">psych:</label>
+        <select id="psych" name="psych" required>
+            <option value="f">False</option>
+            <option value="t">True</option>
+        </select><br><br>
+        <label for="TSH">TSH:</label>
+        <input type="TSH" id="TSH" name="TSH" required><br><br>
+        <label for="T3">T3:</label>
+        <input type="T3" id="T3" name="T3" required><br><br>
+        <label for="TT4">TT4:</label>
+        <input type="TT4" id="TT4" name="TT4" required><br><br>
+        <label for="T4U">T4U:</label>
+        <input type="T4U" id="T4U" name="T4U" required><br><br>
+        <label for="FTI">FTI:</label>
+        <input type="FTI" id="FTI" name="FTI" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
