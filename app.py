@@ -41,7 +41,6 @@ def download_logs():
 
 
 
-
 # Define a route to handle incoming requests from users
 @app.route('/predict', methods=['POST'])
 def predict():
