@@ -88,7 +88,7 @@ jobs:
          
       - name: Stop and remove  container if running
         run: |
-         docker ps -q --filter "name=thyroiddetection" | grep -q . && docker stop thyroiddetection && docker rm -fv thyroiddetection
+         docker ps -q --filter "name=thyroid" | grep -q . && docker stop thyroid && docker rm -fv thyroid
        
       - name: Run Docker Image to serve users
         run: |
