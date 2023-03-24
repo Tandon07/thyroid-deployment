@@ -21,7 +21,6 @@ static_folder='/logs'
 
 
 
-
 # configure logging
 log_filename = 'appps.log'
 handler = logging.FileHandler(log_filename)
