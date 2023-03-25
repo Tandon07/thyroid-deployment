@@ -476,4 +476,7 @@ requests
 # Flask
 Flask-Cors
 # numpy
+python-dotenv==0.10.1
+pymongo>=3.1
+dill
 -e .
