@@ -1,2 +1,11 @@
 2023-03-25 00:25:54,452 INFO: You are here
 2023-03-25 00:50:51,139 INFO: You are here
+2023-03-25 01:32:25,266 INFO: You are here
+2023-03-25 01:33:09,071 INFO: You are in predict page
+2023-03-25 01:33:09,072 INFO: Taken inputs
+2023-03-25 01:33:09,082 INFO: Converted input data to DataFrame
+2023-03-25 01:33:09,110 INFO: Transformer applied
+2023-03-25 01:33:09,114 INFO: Prediction applied
+2023-03-25 01:33:09,115 INFO: Inverse Transform applied
+2023-03-25 01:33:09,116 INFO: Assigning categories
+2023-03-25 01:33:09,117 INFO: categories assigned
