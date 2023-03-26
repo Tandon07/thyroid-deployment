@@ -1,0 +1,4 @@
+[ 2023-03-26 18:47:42,841 ] 31 app - INFO - You are here
+[ 2023-03-26 18:47:42,854 ] 225 werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[ 2023-03-26 18:47:42,854 ] 225 werkzeug - INFO -  * Running on http://192.168.1.3:8080/ (Press CTRL+C to quit)

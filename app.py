@@ -122,17 +122,38 @@ def predict():
     elif cat_prediction =='N':
         category = 'overreplaced'
     elif cat_prediction =='O':
-        category = 'antithyroid drugs'
+        category = 'antithyroid treatment through antithyroid drugs'
     elif cat_prediction =='P':
-        category = 'I131 treatment'
+        category = 'antithyroid treatment through I131 treatment'
     elif cat_prediction =='Q':
-        category = 'surgery'
+        category = 'antithyroid treatment through surgery'
     elif cat_prediction =='R':
         category = 'discordant assay results'
     elif cat_prediction =='S':
         category = 'elevated TBG'
     elif cat_prediction =='T':
         category = 'elevated thyroid hormones'
+
+
+    elif cat_prediction =='AK':
+        category = 'consistent with hypothyroidism, but there is also evidence of a concurrent non-thyroidal illness'
+    elif cat_prediction =='KJ':
+        category = 'consistent with hypothyroidism, but there is also evidence of concurrent non-thyroidal illness and decreased binding protein levels'
+    elif cat_prediction =='MK':
+        category = 'consistent with a diagnosis of underreplaced thyroid hormone in the presence of concurrent non-thyroidal illness'
+    elif cat_prediction =='LJ':
+        category = 'consistent with a diagnosis of hypothyroidism that is being treated with replacement therapy, but there is also evidence of decreased binding protein levels'
+    elif cat_prediction =='GK':
+        category = 'consistent with a diagnosis of compensated hypothyroidism in the presence of concurrent non-thyroidal illness'
+    elif cat_prediction =='MI':
+        category = 'consistent with a diagnosis of underreplaced thyroid hormone in the presence of increased binding protein levels'
+    elif cat_prediction =='FK':
+        category = 'consistent with a diagnosis of primary hypothyroidism in the presence of concurrent non-thyroidal illness.'
+    elif cat_prediction =='GI':
+        category = 'consistent with a diagnosis of compensated hypothyroidism in the presence of increased binding protein levels'
+    elif cat_prediction =='OI':
+        category = ' consistent with a diagnosis of increased binding protein levels in the presence of antithyroid drug therapy.'
+
     else:
         category = 'Not Suffering with Thyroidal Disease'
     app.logger.info('categories assigned')
